@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar-menu a {
+    @apply flex items-center gap-5 py-2 pl-3 pr-4 hover:bg-slate-500 font-medium border-l-4 border-transparent whitespace-nowrap;
+}
+
+.sidebar-collapse{
+    @apply md:w-16 -left-full md:left-0;
+}
+
+.sidebar-collapse ~ #main{
+    @apply pl-0 md:pl-16;
+}
+
+.sidebar-menu-icon {
+    @apply text-3xl;
+}
+
+.sidebar-menu-icon .sidebar-user-profile{
+    @apply hidden;
+}
